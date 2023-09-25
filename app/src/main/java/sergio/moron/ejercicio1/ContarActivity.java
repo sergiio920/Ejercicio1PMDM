@@ -20,8 +20,10 @@ public class ContarActivity extends AppCompatActivity {
         if (bundle != null) {
             int caracteres = bundle.getInt("caracteres");
             int palabras = bundle.getInt("palabras");
+
             TextView txtCaracteres = findViewById(R.id.txtCaracteresContar);
             txtCaracteres.setText(String.valueOf(caracteres));
+
             TextView txtPalabras = findViewById(R.id.txtPalabrasContar);
             txtPalabras.setText(String.valueOf(palabras));
         }
